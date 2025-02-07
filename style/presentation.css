@@ -1,0 +1,363 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #ccc5b9;
+}
+
+article main {
+    width: 85vw;
+    margin: 20px;
+}
+
+
+.container_one,.container_two,.container_three,
+.container_four,.container_five,.container_six,
+.container_seven,.container_eight,.container_nine,
+.container_ten,.container_eleven,.container_twelve,.container_thirteen,.container_fourteen {
+    border-radius: 25px;
+    border: 3px solid #011627;
+    margin-bottom: 15px;
+}
+
+
+/* ************************************************************************************************* DEBUT Ecriture */
+
+p::selection {
+    color: #000;
+    background-color: #eb5e28;
+}
+
+
+h2 {
+    font-size: 2.3em;
+    color: #eb5e28;
+    text-decoration: underline;
+    margin-left: 25px;
+    font-weight: 800;
+}
+
+p {   
+    margin: 5px 20px; 
+    font-size: 1.3em;
+    font-weight: 500;
+    line-height: 35px;
+    text-align: justify;
+    text-indent: 1em;
+}
+
+h3 {
+    font-size: 2.5em;
+    color: #eb5e28;
+    text-decoration:underline;
+    margin-left: 30px;
+    letter-spacing: 3px;
+}
+
+/* ************************************************************************************************* FIN Ecriture */
+
+
+/* ************************************************************************************************* DEBUT Cercle */
+
+article .animation:before {
+    position: fixed;
+    content: "";
+    left: 31%;
+    top: 18%;
+    width: 450px;
+    height: 450px;
+    background: #fffcf2;
+    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+    will-change: border-radius, transform, opacity;
+    animation: sliderShape 5s linear infinite;
+    display: block;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* ************************************************************************************************* FIN Cercle */
+
+
+
+/* ************************************************************************************************* DEBUT Titre */
+
+
+header {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    position: relative;
+}
+
+
+header h1:nth-child(1) {
+    font-size: 5.3em;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 9px;    
+    color: transparent;
+    -webkit-text-stroke: 4px #252422;
+    cursor: pointer;
+}
+
+header h1:nth-child(2) {
+    font-size: 5.3em;
+    font-family: 'Poppins', sans-serif;
+    color: #252422;
+    text-transform: uppercase;
+    letter-spacing: 9px;    
+    position: absolute;
+    transform: translate(0%,0%);
+    animation: vague 7s ease-in-out infinite;
+    cursor: pointer;
+}
+
+/* ************************************************************************************************* FIN Titre */
+
+
+/* ************************************************************************************************* DEBUT Nav Menu */
+
+.barre_navigation {
+    position: fixed;
+    margin: 20px;
+    padding: 10px;
+    top: 20.9%;
+    left: 86.7%;
+    border: 3px solid #000;
+    border-radius: 20px;
+}
+
+.barre_navigation ul  {
+    list-style: none;
+}
+
+.barre_navigation ul:hover li a  {
+    color: #eb5e28;
+}
+
+
+.barre_navigation ul:hover li a:not(:hover) {
+    color: #000;
+    opacity: 0.5;
+    filter: blur(1px);
+}
+
+.barre_navigation ul li a {    
+    font-size: 1.3em;
+    color: #000000;
+    font-weight: 500;
+    transition: 0.5s ease;
+    letter-spacing: 1.5px;
+}
+
+/* ************************************************************************************************* FIN Nav Menu */
+
+
+
+/* ************************************************************************************************* DEBUT Tableau */
+
+
+table {
+    border-collapse: collapse;
+    height: 100px;
+    width: 800px;
+    margin: 30px auto;
+    background-color: transparent;
+    box-shadow:
+    0px 0.8px 10px rgba(0, 0, 0, 0.7),
+    0px 6px 80px rgba(0, 0, 0, 0.183)
+;
+}
+ 
+ 
+tr th {
+    background-color: #113042;
+    color: aliceblue;
+    text-align: center;
+    border :1px solid #ddd;
+    font-size: 1.1em;
+}
+ 
+tr td {
+    padding: 10px 15px;
+    border :1px solid #13125e;
+}
+
+tr:nth-child(even){
+     background-color: #f3f3f3;
+}
+
+tr:last-of-type{
+     border-bottom: 2px solid #13125e;
+}
+
+
+
+/* ************************************************************************************************* FIN Tableau */
+
+
+/* ************************************************************************************************* DEBUT Footer */
+
+footer {
+    width: 90vw;
+    margin: auto;
+}
+
+.designer {
+    margin-left: -20px;
+  }
+
+footer div p{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6em;
+}
+
+.footer_text span
+{
+   text-transform: uppercase;
+    background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );    
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 3s linear infinite;
+    display: inline-block;
+    font-size: 1em;
+    background-size: 200% auto ;
+}
+
+/* ************************************************************************************************* FIN Footer */
+
+
+/* ************************************************************************************************* DEBUT Images */
+
+
+.photo_right {
+    width: 410px;
+    padding: 10px;
+    border-radius: 15px;
+    float: right;
+}
+
+.photo_right_two,.photo_right_three,
+.photo_right_ten{
+    width: 500px;
+    height: 200px;
+    border-radius: 15px;
+    float: right;
+    padding: 20px ;
+}
+
+.photo_right_four{
+    width: 500px;
+    height: 300px;
+    border-radius: 15px;
+    float: right;
+    padding: 20px;
+}
+
+.photo_right_five,.photo_right_eleven,
+.photo_right_twelve,.photo_right_thirteen {
+    width: 520px;
+    height: 200px;
+    border-radius: 15px;
+    float: right;
+    padding: 20px;
+}
+
+
+.photo_right_six,.photo_right_seven,.photo_right_eight{
+    width: 520px;
+    height: 230px;
+    border-radius: 15px;
+    padding: 20px;
+    float: right;
+}
+
+
+.photo_right_nine {
+    width: 520px;
+    height: 250px;
+    border-radius: 15px;
+    padding: 20px ;
+    float: right;
+}
+
+/* ************************************************************************************************* FIN Images */
+
+
+/* ************************************************************************************************* DEBUT Animations */
+
+@keyframes vague {
+    0%,
+    100% {
+      clip-path: polygon(
+        0% 45%,
+        16% 44%,
+        33% 50%,
+        54% 60%,
+        70% 61%,
+        84% 59%,
+        100% 52%,
+        100% 100%,
+        0% 100%
+      );
+    }
+  
+    50% {
+      clip-path: polygon(
+        0% 70%,
+        15% 65%,
+        34% 66%,
+        51% 62%,
+        67% 50%,
+        84% 45%,
+        100% 50%,
+        100% 100%,
+        0% 100%
+      );
+    }
+}
+
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+@keyframes sliderShape{
+    0%,100%{
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+      transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    34%{
+        border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+      transform:  translate3d(0,5px,0) rotateZ(0.01deg);
+    }
+    50%{
+      transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    67%{
+      border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
+      transform: translate3d(0,-3px,0) rotateZ(0.01deg);
+    }
+}
+
+
+/* ************************************************************************************************* FIN Animations */

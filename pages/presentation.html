@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentation</title>
+    <link rel="stylesheet" href="../style/presentation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="web icon" href="../images/icon.svg">
+</head>
+<body>
+    <header>
+        <h1 onclick="window.location.href = '../index.html';">Les balises sémantiques</h1>
+        <h1 onclick="window.location.href = '../index.html';">Les balises sémantiques</h1>
+    </header>
+
+    <article>
+        <div class="animation"></div>
+        <main>      
+            <div class="container_one">
+                <img src="../images/image1.png" class="photo_right" alt="Structure de la page">
+                <h2 id="balisesemantique">Qu’est-ce qu’une balise sémantique ?</h2>
+                <p class="text_left">
+                    Une balise sémantique est une étiquette ou une marque de code qui est utilisée pour décrire le contenu d'une page web de manière structurelle et sémantique.<br>
+                    Elle permet aux moteurs de recherche et aux navigateurs de comprendre et d'interpréter le contenu de la page, ce qui facilite la navigation pour les utilisateurs et améliore le référencement  de la page.
+                    Les balises sémantiques incluent des éléments HTML tels que :<br>< header >, < nav >, < section>, < article >, < aside >, < main > et <br>< footer >, qui indiquent la structure de la page et le rôle de chaque élément , sans oublier que ces balises sont fermantes comme suit:<br>< /header>, < /nav>, < /section>, < /article>, < /aside>, < /main>, < /footer>.<br>Elles permettent également aux développeurs web de créer des pages plus accessibles et plus conviviales pour les utilisateurs, notamment les personnes atteintes d'un handicap visuel ou moteur.
+                </p>
+            </div>
+            <div class="container_two">
+                <h2 id="gen">Généralité</h2>
+                <table>
+                    <tr>
+                        <th>Balise</th>
+                        <th>Définition</th>
+                    </tr>
+                    <tr>
+                        <td> "header"</td>
+                        <td>Utilisée pour représenter l'en-tête d'une page ou d'une section.</td>
+                    </tr>
+                    <tr>
+                        <td>"nav"</td>
+                        <td>Utilisée pour représenter la barre de navigation principale d'une page.</td>
+                    </tr>
+                    <tr>
+                        <td>"main"</td>
+                        <td>Utilisée pour représenter le contenu principal d'une page.</td> 
+                    </tr>
+                    <tr>
+                        <td>"section"</td>
+                        <td>Utilisée pour représenter une section indépendante d'une page, telle qu'un chapitre, une partie ou un groupe de contenu connexe.</td>
+                    </tr>
+                    <tr>
+                        <td>"article"</td>
+                        <td>Utilisée pour représenter un contenu indépendant et autonome, comme un article de blog ou une nouvelle.</td>
+                    </tr>
+                    <tr>
+                        <td>"aside"</td>
+                        <td>Utilisée pour représenter un contenu qui est lié au contenu principal, mais qui n'est pas essentiel pour la compréhension du contenu principal.</td>
+                    </tr>
+                    <tr>
+                        <td>"footer"</td>
+                        <td>Utilisée pour représenter le pied de page d'une page ou d'une section.</td>
+                    </tr>
+                    <tr>
+                        <td>"Hn"</td>
+                        <td>Utilisée pour structurer le contenu d'une page web en titres et sous-titres.</td>
+                    </tr>
+                    <tr>
+                        <td>"Blockquote"</td>
+                        <td>Utilisée pour citer un texte ou un passage d'un autre document ou d'une autre source.</td>
+                    </tr>
+                    <tr>
+                        <td>"Cite"</td>
+                        <td>Utilisée pour marquer une citation ou une référence à une source dans un document HTML.</td>
+                    </tr>
+                    <tr>
+                        <td>"Code"</td>
+                        <td>Utilisée pour marquer du code informatique  afin de l'afficher avec une police de caractère spéciale et de le distinguer du reste du contenu.</td>
+                    </tr>
+                    <tr>
+                        <td>"Pre"</td>
+                        <td>Utilisée pour afficher du texte préformaté en préservant la mise en forme originale, y compris les espaces et les retours à la ligne.</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="container_three">
+                <img src="../images/header.jpg" alt="balise header" class="photo_right_two">
+                <h3 id="header">La balise < Header > </h3>
+                <p class="paragraphe">
+                    La balise < header > en html est utilisée pour représenter l'en-tête d'une page web ou d'une section de contenu.<br> Elle est généralement placée en haut de la page et contient des éléments tels que le titre de la page, le logo du site, le menu de navigation, etc...<br>  
+                    Elle ne peut pas être contenue dans une autre balise "header",c'est une balise de type bloc, elle se comporte exactement comme une balise "div" .
+                </p>
+            </div>
+            <div class="container_four">
+                <img src="../images/nav.png" alt="balise nav" class="photo_right_three">
+                <h3 id="nav">La balise < nav > </h3>
+                <p class="paragraphe">
+                    Dans la balise < header > vu précédemment, nous pouvons ajouter une zone servant à délimiter la navigation principale du site web. Cette zone peut être définie à l’aide de la balise sémantique< nav >.<br>Il faut tout de même savoir que la balise < nav > n’est pas forcément placée dans le header d’un site, on peut la retrouver n’importe où et à plusieurs endroits de la page comme par exemple dans le footer ou dans une barre latérale de contenu (sidebar).
+                </p>
+            </div>
+            <div class="container_five">
+                <img src="../images/main.png" alt="balise main" class="photo_right_four">
+                <h3 id="main">La balise < main > </h3>
+                <p class="paragraphe">
+                    La balise < main > en html est utilisée pour encapsuler le contenu principal d'une page web. Elle est généralement utilisée pour contenir le contenu principal d'une page, tel que le texte principal, les images, les graphiques, les vidéos, etc. Elle est souvent utilisée en conjonction avec d'autres balises sémantiques telles que < header >, < footer>,< nav >, etc...<br>L'utilisation de la balise < main >aide les moteurs de recherche à comprendre la structure de la page et à déterminer quel est le contenu principal. Elle peut également être utile pour les technologies d'assistance telles que les lecteurs d'écran, qui peuvent utiliser les informations de la balise pour fournir une meilleure expérience utilisateur aux personnes ayant une déficience visuelle.
+                </p>
+            </div>
+            <div class="container_six">
+                <img src="../images/article.png" alt="balise article" class="photo_right_five">
+                <h3 id="article">La balise < article > </h3>
+                <p class="paragraphe">
+                    Cette balise va permettre de signaler aux robots d’indexation quels éléments sont en lien avec le sujet de la page. Vous pouvez glisser dans la balise < article >, le titre, les informations sur l’auteur ou la date de publication, la catégorie, le corps de l’article, et les articles annexes d’une même thématique. La bonne tenue de la balise article va également dépendre de l’objectif de votre site web. Cette balise a d’autant plus d’importance sur un site e-commerce, un site d’actualité ou un blog.
+                </p>
+            </div>
+            <div class="container_seven">
+                <img src="../images/section.png" alt="balise section" class="photo_right_six">
+                <h3 id="section">La balise < section > </h3>
+                <p class="paragraphe">
+                    La balise < section >  en HTML est utilisée pour représenter une section d'une page web. Elle permet de diviser une page en sections logiques et indépendantes, ce qui facilite la compréhension du contenu pour les utilisateurs et les moteurs de recherche.
+                </p>
+            </div>
+            <div class="container_eight">
+                <img src="../images/aside.png" alt="balise section" class="photo_right_seven">
+                <h3 id="aside">La balise < aside ></h3>
+                <p class="paragraphe">
+                    La balise < aside > est souvent utilisée pour délimiter des sidebars (les barres latérales de contenu annexes que l'on retrouve souvent sur des blogs) et représenter un contenu connexe ou complémentaire au contenu principal d'une page. Elle peut être utilisée pour ajouter des informations supplémentaires, des anecdotes, des références ou des publicités qui ne sont pas directement liées au contenu principal, mais qui sont tout de même pertinentes pour les utilisateurs.
+                </p>
+            </div>
+            <div class="container_nine">
+                <img src="../images/footer.png" alt="balise footer" class="photo_right_eight">
+                <h3 id="footer">La balise < footer > :</h3>
+                <p class="paragraphe">
+                    La septième et dernière balise sémantique de structure de page est < footer >,elle est utilisée pour définir le pied de page d'une page web ou d'une section de page.<br> Cette balise est généralement utilisée pour inclure des informations telles que les droits d'auteur, les informations de contact, les liens vers des pages associées ou toute autre information de fin de page pertinente.
+                </p>
+            </div>
+            <div id="hn" class="container_ten">
+                <img src="../images/hn.png" alt="balise hn" class="photo_right_nine">
+                <h3>La balise < hn ></h3>
+                <p class="paragraphe">Les Hn, encore appelées Hx, sont des balises HTML. Elles encadrent les titres de vos contenus, les hiérarchisent au nombre de 6, de h1 à h6, certaines se révèlent plus précieuses que d’autres pour charmer les moteurs de recherche et ensorceler vos cibles. les balises encadrent vos titres et sous-titres.
+                </p>
+            </div>
+            <div id="blockquote" class="container_eleven">
+                <img src="../images/blockquote.jpg" alt="balise blockquote" class="photo_right_ten">
+                <h3>La balise < blockquote ></h3>
+                <p class="paragraphe">Un bloc de citation (ou "blockquote" en anglais) est un style de mise en forme utilisé dans un texte écrit pour indiquer qu'une section de texte cité est présentée. Le texte est mis en évidence par rapport au contenu environnant en étant indenté.Les blocs de citation sont souvent utilisés pour mettre en avant des déclarations importantes ou remarquables faites par d'autres personnes, ou pour fournir des preuves ou un soutien à un argument ou à une position défendue par l'auteur. Ils peuvent apparaître dans différents contextes, comme dans des articles de presse, des essais, ou des rapports.
+                </p>
+            </div>
+            <div id="cite" class="container_twelve">
+                <img src="../images/cite.jpg" alt="balise cite" class="photo_right_eleven">
+                <h3>La balise < cite ></h3>
+                <p class="paragraphe">
+                 La balise HTML < cite > est utilisée pour marquer une citation ou une référence à une source dans un document HTML. Elle est généralement utilisée en combinaison avec les balises < blockquote > ou < q > pour indiquer l'auteur ou la source d'une citation.
+                </p>
+            </div>
+            <div id="code" class="container_thirteen">
+                <img src="../images/code.jpg" alt="balise code" class="photo_right_twelve">
+                <h3>La balise < code ></h3>
+                <p class="paragraphe">
+                    La balise HTML < code > est une balise en ligne qui permet d'encadrer du code informatique ou toute autre séquence de texte qui doit être affichée avec une police de caractère à largeur fixe et qui ne doit pas être interprétée comme du contenu HTML.Elle est souvent utilisée en combinaison avec d'autres balises telles que < pre > ou < var >.
+                </p>
+            </div>
+            <div id="pre" class="container_fourteen">
+                <img src="../images/pre.jpg" alt="balise pre" class="photo_right_thirteen">
+                <h3>La balise < pre ></h3>
+                <p class="paragraphe">
+                    L’élément HTML < pre > permet de conserver le formatage effectué sur des texte avant l’affichage dans le navigateur, c’est-à-dire lors de la création du code dans l’éditeur de texte.
+                    Cet élément est généralement utilisé pour afficher du texte possédant un formatage particulier ou pour afficher tout simplement des exemples de code. On peut notamment l’utiliser pour améliorer le rendu d’un tableau de données récupérées en PHP dans une base MySQL.
+                    Si cet élément s’avère parfois pratique, attention à ne pas l’utiliser de manière abusive en remplacement du CSS car cela est une mauvaise pratique. 
+                </p>
+            </div>
+        </main>
+        <aside class="barre_navigation">
+            <ul>
+                <li><a href="#balisesemantique">Définition</a></li>
+                <li><a href="#gen">Généralité</a></li>
+                <li><a href="#header">Header</a></li>
+                <li><a href="#nav">Nav</a></li>
+                <li><a href="#main">Main</a></li>
+                <li><a href="#article">Article</a></li>
+                <li><a href="#section">Section</a></li>
+                <li><a href="#aside">Aside</a></li>
+                <li><a href="#footer">Footer</a></li>
+                <li><a href="#hn">Hn</a></li>
+                <li><a href="#blockquote">Blockquote</a></li>
+                <li><a href="#cite">Cite</a></li>
+                <li><a href="#code">Code</a></li>
+                <li><a href="#pre">Pre</a></li>
+            </ul>
+        </aside>
+    </article>
+
+    <footer>
+        <div class="footerbottom">
+          <p class="footer_text">Copyright &copy;2023. Designed by<span class="designer">GLASS</span></p>
+        </div>
+    </footer>
+    
+</body>
+</html>

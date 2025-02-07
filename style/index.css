@@ -1,0 +1,365 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+body {
+    height: 100vh;
+    background: #ccc5b9;
+}
+
+
+main .section_principale {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+
+main .section_principale .buttons {
+    width: 33vw;
+    display: flex;
+    margin-left: 10px;
+    justify-content: space-around;
+
+}
+
+
+
+
+
+/* ************************************************************************************************* DEBUT Dark Mode */
+
+.dark-body {
+    background-color: #252422;
+    transition: 0.7s;
+}
+
+.dark-body main .dark-round::before {
+    background-color: #403d39;
+    transition: 0.7s;
+}
+
+.dark-body main .dark-titre h1:nth-child(1) {
+    -webkit-text-stroke: 4px #fffcf2;
+    transition: 0.7s;
+}
+
+.dark-body  main .dark-titre h1:nth-child(2) {
+    color: #fffcf2;
+    transition: 0.7s;
+}
+
+
+.dark-body main .dark-continuer {
+    background-color: #000;
+    color: #FFF;
+    transition: 0.6s;
+}
+
+.dark-body main .dark-continuer:hover {
+    background-color: #eb5e28;
+    color: #000;
+    transition: 0.6s;
+}
+
+.dark-btn {
+    background: #eb5e28;
+    transition: 0.7s;
+}
+
+.dark-btn span {
+    color: white;
+    transition: 0.7s;
+}
+
+.dark-btn:hover span {
+    color: #000000;
+}
+
+.dark-btn .border {
+    border: 0.20em solid #eb5e28;
+}
+
+
+/* ************************************************************************************************* FIN Dark Mode */
+
+
+/* ************************************************************************************************* DEBUT Switch Button */
+
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    margin: 30px;
+}
+
+.switch {
+    --button-width: 4em;
+    --button-height: 2em;
+    --toggle-diameter: 1.5em;
+    --button-toggle-offset: calc((var(--button-height) - var(--toggle-diameter)) / 2);
+    --toggle-shadow-offset: 10px;
+    --toggle-wider: 3em;
+    --color-black: #252422;
+    --color-white: #eb5e28;
+}
+   
+.slider {
+    display: inline-block;
+    width: var(--button-width);
+    height: var(--button-height);
+    background-color: var(--color-black);
+    border-radius: calc(var(--button-height) / 2);
+    position: relative;
+    transition: 0.3s all ease-in-out;
+}
+   
+.slider::after {
+    content: "";
+    display: inline-block;
+    width: var(--toggle-diameter);
+    height: var(--toggle-diameter);
+    background-color: #FFF;
+    border-radius: calc(var(--toggle-diameter) / 2);
+    position: absolute;
+    top: var(--button-toggle-offset);
+    transform: translateX(var(--button-toggle-offset));
+    box-shadow: var(--toggle-shadow-offset) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);
+    transition: 0.3s all ease-in-out;
+}
+   
+.switch input[type="checkbox"]:checked + .slider {
+    background-color: var(--color-white);
+}
+   
+.switch input[type="checkbox"]:checked + .slider::after {
+    transform: translateX(calc(var(--button-width) - var(--toggle-diameter) - var(--button-toggle-offset)));
+    box-shadow: calc(var(--toggle-shadow-offset) * -1) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);
+}
+   
+.switch input[type="checkbox"] {
+    display: none;
+}
+   
+.switch input[type="checkbox"]:active + .slider::after {
+    width: var(--toggle-wider);
+}
+   
+.switch input[type="checkbox"]:checked:active + .slider::after {
+    transform: translateX(calc(var(--button-width) - var(--toggle-wider) - var(--button-toggle-offset)));
+}
+   
+
+/* ************************************************************************************************* FIN Switch Button */
+
+
+/* ************************************************************************************************* DEBUT Title */
+
+
+main .section_principale h1:nth-child(1) {
+    font-size: 5.2em;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 8px;    
+    color: transparent;
+    -webkit-text-stroke: 4px #252422;
+    transition: 0.7s;
+}
+
+main .section_principale h1:nth-child(2) {
+    font-size: 5.2em;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+    color: #252422;
+    text-transform: uppercase;
+    letter-spacing: 8px;    
+    position: absolute;
+    transform: translate(0%,-20%);
+    animation: vague 9s ease-in-out infinite;
+    transition: 0.7s;
+}
+
+
+/* ************************************************************************************************* FIN Title */
+
+
+/* ************************************************************************************************* DEBUT Cercle */ 
+
+
+main .animation:before {
+    position: absolute;
+    content: "";
+    left: 31%;
+    top: 18%;
+    width: 450px;
+    height: 450px;
+    background: #fffcf2;
+    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+    will-change: border-radius, transform, opacity;
+    animation: sliderShape 8s linear infinite;
+    display: block;
+    z-index: -1;
+    opacity: 0.87;
+    transition: 0.7s;
+}
+
+/* *************************************************************************************************  FIN Cercle */
+
+
+/* ************************************************************************************************* DEBUT Buttons */
+
+.savoir  {
+    font-size: 0.9em;
+    padding: 1rem 1.5rem;
+    border: none;
+    outline: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    background-color: #eb5e28;
+    color: #000;
+    font-weight: 800;
+    transition: 0.6s;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 20px #fffcf2;
+}
+
+
+  
+.savoir:active {
+    scale: 0.92;
+}
+
+
+.savoir:hover {
+    background: #403d39;
+    color: #FFF;
+    transition: 0.8s;
+}
+
+
+.contact {
+    font-size: 15px;
+    position: relative;
+    margin: auto;
+    padding: 1em 2.5em 1em 2.5em;
+    border: none;
+    background: #252422;
+    border-radius: 30px;
+    transition: all 0.1s linear;
+}
+
+
+
+.contact:active {
+    transform: scale(0.95);
+}
+   
+.contact span {
+    color: #faedcd;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact:hover span {
+    color: #eb5e28;
+    font-weight: 800;
+    font-size: 1.12em;
+    transition: 0.8s;
+}
+   
+.contact .border {
+    position: absolute;
+    border: 0.20em solid #252422;
+    transition: all 0.3s 0.08s linear;
+    top: 50%;
+    left: 50%;
+    width: 11em;
+    height: 3em;
+    transform: translate(-50%, -50%);
+}
+   
+.contact:hover .border {
+    display: block;
+    width: 12.5em;
+    cursor: pointer;
+    height: 4em;
+}
+   
+.round {
+    border-radius: 2em;
+}
+
+
+
+/* ************************************************************************************************* FIN Buttons */
+
+
+/* ************************************************************************************************* DEBUT Animations */
+
+
+@keyframes sliderShape{
+    0%,100%{
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+      transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    34%{
+        border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+      transform:  translate3d(0,5px,0) rotateZ(0.01deg);
+    }
+    50%{
+      transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    67%{
+      border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
+      transform: translate3d(0,-3px,0) rotateZ(0.01deg);
+    }
+}
+
+@keyframes vague {
+    0%,
+    100% {
+      clip-path: polygon(
+        0% 45%,
+        16% 44%,
+        33% 50%,
+        54% 60%,
+        70% 61%,
+        84% 59%,
+        100% 52%,
+        100% 100%,
+        0% 100%
+      );
+    }
+  
+    50% {
+      clip-path: polygon(
+        0% 70%,
+        15% 65%,
+        34% 66%,
+        51% 62%,
+        67% 50%,
+        84% 45%,
+        100% 50%,
+        100% 100%,
+        0% 100%
+      );
+    }
+}
+
+/* ************************************************************************************************* FIN Animations */
